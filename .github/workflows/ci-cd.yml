@@ -30,7 +30,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.ECR_REPOSITORY_URI }}/application:latest
+          tags: ${{ secrets.ECR_REPOSITORY_URI }}/application-repo:latest
 
   deploy:
     runs-on: ubuntu-latest
